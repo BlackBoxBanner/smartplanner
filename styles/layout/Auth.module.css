@@ -6,7 +6,7 @@
 }
 
 .container {
-  background: #e6f2f8;
+  background: rgb(230, 242, 248);
   width: 100%;
   height: 100%;
   padding: 3rem;
@@ -40,8 +40,13 @@
 .rightinformation {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   border-radius: 2rem;
   padding: 2rem;
+=======
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+>>>>>>> 9cb384b3bea817d6c8fdba0ab4363fdd077d65b4
   width: 100%;
   background: rgb(196, 196, 196);
   font-family: sans-serif;
@@ -114,4 +119,12 @@
 
 .checkbox {
 
+}
+
+.textjustify{
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  
 }
