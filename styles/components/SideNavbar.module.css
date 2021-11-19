@@ -1,0 +1,17 @@
+.container {
+    background: var(--color-profilebar-container);
+    padding: 0rem 0rem;
+    box-shadow: var(--component-boxshadow-heavy);
+    display: flex;
+    position: fixed;
+    width: 70px;
+    height: 750px;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    top:200px;  
+  }
+
+.Navul {
+    list-style: none;
+}

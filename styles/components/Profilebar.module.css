@@ -1,6 +1,6 @@
 .container {
     background: var(--color-profilebar-container);
-    padding: 1.5rem 3rem;
+    padding: 2rem 6rem;
     box-shadow: var(--component-boxshadow-heavy);
     display: flex;
     position: fixed;
@@ -9,11 +9,24 @@
     align-items: center;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    left: 50px;
+    left: 180px;
   }
   
   .profileImg {
       width: 90px;
       background-color: lightgray;
       border-radius: 25px;
+  }
+
+  .profileNameContainer {
+      margin: 0rem 3rem;
+      line-height: 10px;
+  }
+
+  .profileName {
+    font-size: 30px;
+  }
+
+  .profileEmail {
+    font-size: 20px;
   }

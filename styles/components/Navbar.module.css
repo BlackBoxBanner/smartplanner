@@ -28,7 +28,7 @@
 .RightButton > ul > li > a {
   background: var(--color-button);
   padding: 0.5rem 0.8rem;
-  border-radius: var(--component-boarderradius);
+  border-radius: var(--component-borderradius);
   border: none;
 }
 .RightButton > ul > li > a:hover,
