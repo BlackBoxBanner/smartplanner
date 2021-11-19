@@ -4,19 +4,16 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className={styles.container}>
-      <div><a href="/" className={styles.title}>Explanner
-          </a></div>
+      <div>
+        <a href="/" className={styles.title}>Explanner</a>
+      </div>
       <div className={styles.RightButton}>
         <ul>
           <li>
-            <a href="#" className={styles.link}>
-              Dashboard
-            </a>
+            <a href="dashboard" className={styles.link}>Dashboard</a>
           </li>
           <li>
-            <a href="/auth/login" className={styles.link}>
-              Login
-            </a>
+            <a href="/auth/login" className={styles.link}>Login</a>
           </li>
         </ul>
       </div>

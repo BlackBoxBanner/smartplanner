@@ -1,0 +1,19 @@
+.container {
+    background: var(--color-profilebar-container);
+    padding: 1.5rem 3rem;
+    box-shadow: var(--component-boxshadow-heavy);
+    display: flex;
+    position: fixed;
+    width: 900px;
+    height: 130px;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 50px;
+  }
+  
+  .profileImg {
+      width: 90px;
+      background-color: lightgray;
+      border-radius: 25px;
+  }
