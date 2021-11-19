@@ -5,11 +5,11 @@
     display: flex;
     position: fixed;
     width: 70px;
-    height: 750px;
+    height: 640px;
     align-items: center;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    top:200px;  
+    top:140px;  
   }
 
 .Navul {

@@ -4,18 +4,18 @@
     box-shadow: var(--component-boxshadow-heavy);
     display: flex;
     position: fixed;
-    width: 900px;
-    height: 130px;
+    width: 800px;
+    height: 100px;
     align-items: center;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    left: 180px;
+    left: 130px;
   }
   
   .profileImg {
-      width: 90px;
+      width: 70px;
       background-color: lightgray;
-      border-radius: 25px;
+      border-radius: 15px;
   }
 
   .profileNameContainer {
@@ -24,9 +24,9 @@
   }
 
   .profileName {
-    font-size: 30px;
+    font-size: 23px;
   }
 
   .profileEmail {
-    font-size: 20px;
+    font-size: 17px;
   }
