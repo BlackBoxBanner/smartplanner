@@ -14,7 +14,7 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <a href="/auth/login" className={styles.link}>
               Login
             </a>
           </li>
