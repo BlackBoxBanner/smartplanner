@@ -38,13 +38,14 @@ export default function Login() {
                 <input type="checkbox" />
                 {`Remember password`}
               </label>
+              //TODO: styles the checkbox
             </div>
           </div>
           <div className={styles.rightinformation}>
             <h1>
               This is a demo website. You can use this website to test the
             </h1>
-            <p>
+            <p className={styles.textjustify}>
               {`When I was a little boy in elementary school, the neighborhood kids
             and I all looked forward to playing so many games in my backyard
             during the long summer holidays between grades. For instance, one of
