@@ -37,12 +37,7 @@ div {
 :root {
   --color-container: rgba(177, 219, 255, 1);
   --color-profilebar-container: rgba(119, 185, 243, 1);
-<<<<<<< HEAD
-  --color-app-container: rgba(177, 219, 255, 1);
-  --color-background: rgba(214 , 234, 243, 1);
-=======
   --color-background: rgba(214, 234, 243, 1);
->>>>>>> e3717cfe6aa7eb6ec81fec6cc6650467e004f056
   --color-button: rgba(94, 179, 255, 1);
   --color-button-hover: rgba(153, 207, 255, 1);
   --color-input: rgba(229, 229, 229, 1);
