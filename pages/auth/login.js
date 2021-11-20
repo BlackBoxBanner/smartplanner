@@ -1,9 +1,13 @@
 import styles from "@styles/layout/Auth.module.css";
 import { FcGoogle } from "react-icons/fc";
+import Head from "next/head";
 
 export default function Login() {
   return (
     <div className={styles.main}>
+      <Head>
+        <title>Login</title>
+      </Head>
       <div className={styles.container}>
         <div className={styles.titlearea}>
           <h1 className={styles.title}>Login</h1>
@@ -29,16 +33,16 @@ export default function Login() {
               <input
                 type="password"
                 className={styles.input}
-                placeholder="Password"
+                placeholder="Password" 
                 required
               />
             </div>
             <div className={styles.rememberpassword}>
-              <label class="remember password" className={styles.checkbox}>
-                <input type="checkbox" />
+              <label class="remember password" className={styles.lablecenter +" " + styles.checkbox}>
+                <input type="checkbox" className={styles.checkbox}/>
                 {`Remember password`}
               </label>
-              //TODO: styles the checkbox
+              {/* //TODO: styles the checkbox */}
             </div>
           </div>
           <div className={styles.rightinformation}>
