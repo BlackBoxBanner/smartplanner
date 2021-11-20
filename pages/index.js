@@ -9,7 +9,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <main className={styles.main}>
-      <Navbar />
+      <Navbar/>
       </main>
     </div>
   );
