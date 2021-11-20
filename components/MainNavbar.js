@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className={styles.RightButton}>
         <ul>
           <li>
-            <a href="dashboard" className={styles.link}>Dashboard</a>
+            <a href="/user/dashboard" className={styles.link}>Dashboard</a>
           </li>
           <li>
             <a href="/auth/login" className={styles.link}>Login</a>

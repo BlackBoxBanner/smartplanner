@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: var(--color-background);
   display: flex;
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .container {
@@ -32,8 +32,8 @@
 .login {
   display: flex;
   flex-direction: column;
-  padding: 2rem 15%;
-  width: 100%;
+  padding: 2rem 10%;
+  width: 80%;
   gap: 1rem;
 }
 
@@ -58,21 +58,22 @@
   gap: 1rem;
   padding: 0.5rem 1rem;
   background: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
   font-family: monospace;
   outline: none;
-  border: none;
   width: 100%;
 }
 
 .loginwithgoogle:hover {
-  border: 2px solid rgb(0, 0, 0);
+  border-color: var(--color-input-border);
   cursor: pointer;
 }
 
 .loginwithgoogle:focus {
+  background: var(--color-input-border);
   border: 2px solid rgb(0, 0, 0);
 }
 
@@ -82,22 +83,22 @@
   gap: 1rem;
   padding: 0.5rem 1rem;
   background: var(--color-input);
+  border: 2px solid var(--color-input);
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
   font-family: monospace;
   outline: none;
-  border: none;
   width: 100%;
 }
 
 .input:hover {
-  border: 2px solid var(--color-input-border);
+  border-color: var(--color-input-border);
 }
 
 .input:focus,
 .input:active {
-  border: 2px solid var(--color-input-focus);
+  border-color: var(--color-input-focus);
 }
 
 .centeronly {
@@ -112,15 +113,53 @@
   gap: 0.5rem;
 }
 
-.checkbox:hover input{
-  background-color: rgb(128, 128, 128);
-  cursor: pointer;
+.checkbox [type="checkbox"] {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 2px solid #cacece;
+  padding: 7px;
+  border-radius: 3px;
+  display: inline-block;
 }
 
-.textjustify{
+.checkbox:hover{
+  border-color: var(--color-input-border);
+}
+.checkbox :checked {
+  border-color: rgb(43, 110, 255);
+}
+
+.lablecenter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.textjustify {
   text-align: justify;
 }
 
 @media (max-width: 480px) {
-  
+}
+
+@media (max-width: 1050px) {
+  .main {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .login {
+    width: 100%;
+    padding: 1rem 23%;
+  }
+  .rightinformation {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    padding: 1rem 10%;
+  }
 }

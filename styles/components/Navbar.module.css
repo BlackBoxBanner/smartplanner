@@ -1,13 +1,11 @@
 .container {
   background: var(--color-container);
-  margin: 1.5rem;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   box-shadow: var(--component-boxshadow-light);
   display: flex;
   position: fixed;
   width: 100%;
   align-items: center;
-  border-radius: 20px;
 }
 
 .RightButton {
