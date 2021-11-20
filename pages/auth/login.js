@@ -38,7 +38,7 @@ export default function Login() {
               />
             </div>
             <div className={styles.rememberpassword}>
-              <label class="remember password" className={styles.lablecenter +" " + styles.checkbox}>
+              <label className={styles.lablecenter +" " + styles.checkbox}>
                 <input type="checkbox" className={styles.checkbox}/>
                 {`Remember password`}
               </label>
