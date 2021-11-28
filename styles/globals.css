@@ -10,7 +10,8 @@ body {
   box-sizing: border-box;
   font-size: 1rem;
 }
-a {
+a,
+button {
   color: rgba(46, 46, 46, 1);
 }
 
