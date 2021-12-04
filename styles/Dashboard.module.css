@@ -1,46 +1,12 @@
-.main{
+.main {
     min-height: 100vh;
-    min-width: 100vw;
-    background: var(--color-background);
-}
-
-.gridcontainer {
-    margin-top:9.5rem;
-    margin-bottom:3rem;
-    margin-left: 8rem;
-    margin-right: 3rem;
     display: flex;
-    position: fixed;
-    
-    flex-wrap: wrap;
-
+    background: var(--color-background);
+    padding: 0 0 0 8rem;
 }
 
-.todonext {
-    background-color: var(--color-app-container);
-    width: 330px;
-    height: 600px;
-    left: 300px;
-    border-radius:20px;
-    padding:2rem;
+@media (max-width: 450px) {
+    .main {
+        padding: 0;
+    }
 }
-
-.comingupevent {
-    background-color: var(--color-app-container);
-    min-width: 870px;
-    height: 230px;
-    margin-left: 3rem;
-    border-radius:20px;
-    padding:2rem;
-}
-
-.goal {
-    background-color: var(--color-app-container);
-    min-width: 330px;
-    height: 230px;
-    margin-left: 3rem;
-    border-radius:20px;
-    padding:2rem;
-}
-
-

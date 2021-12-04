@@ -1,4 +1,4 @@
-import styles from "@styles/Maimadetest/dashboard.module.css";
+import styles from "@styles/components/DashboardNav.module.css";
 
 export default function DashbordNav() {
     return (

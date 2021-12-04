@@ -159,6 +159,34 @@
   }
 }
 
+.signin{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signinBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-button);
+}
+
+.signinBtn:hover{
+  background: var(--color-button-hover);
+  color: var(--color-input-focus);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   .login {
     padding: 1rem 10%;
