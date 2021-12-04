@@ -5,15 +5,15 @@ export default function Navbar() {
   return (
     <nav className={styles.container}>
       <div>
-        <a href="/" className={styles.title}>Explanner</a>
+        <Link href="/" className={styles.title}>Explanner</Link>
       </div>
       <div className={styles.RightButton}>
         <ul>
           <li>
-            <a href="/user/dashboard" className={styles.link}>Dashboard</a>
+            <Link href="/user/dashboard" className={styles.link}>Dashboard</Link>
           </li>
           <li>
-            <a href="/auth/login" className={styles.link}>Login</a>
+            <Link href="/auth/login" className={styles.link}>Login</Link>
           </li>
         </ul>
       </div>
