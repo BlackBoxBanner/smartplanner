@@ -17,7 +17,7 @@ export default function AuthStateChanged({ children }) {
   }, []);
 
   if (loading) {
-    return 0;
+    return <Loading />;
   }
 
   return children;
