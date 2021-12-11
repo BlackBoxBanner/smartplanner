@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Planner';
+    src: url('Planner.eot');
+    src: url('Planner.eot?#iefix') format('embedded-opentype'),
+        url('Planner.woff2') format('woff2'),
+        url('Planner.woff') format('woff'),
+        url('Planner.ttf') format('truetype'),
+        url('Planner.svg#Planner') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

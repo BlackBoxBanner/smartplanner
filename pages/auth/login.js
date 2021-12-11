@@ -1,8 +1,11 @@
 import styles from "@styles/layout/Auth.module.css";
 import { FcGoogle } from "react-icons/fc";
 import Head from "next/head";
+import useAuth from "@src/hook/auth";
+import { withPublic } from "@src/hook/route";
 
-export default function Login() {
+function Login() {
+    const { loginWithGoogle } = useAuth();
     return (
         <div className={styles.main}>
             <Head>
@@ -16,7 +19,7 @@ export default function Login() {
                     <div className={styles.login}>
                         {/* login with google */}
                         <div>
-                            <button className={styles.loginwithgoogle}>
+                            <button onClick={loginWithGoogle} className={styles.loginwithgoogle}>
                                 <FcGoogle size="1.5em" />
                                 {`Login with Google`}
                             </button>
@@ -91,3 +94,5 @@ export default function Login() {
         </div>
     );
 }
+
+export default withPublic(Login);

@@ -1,7 +1,21 @@
+@font-face {
+  font-family: 'Planner';
+  src: url('../fonts/Planner.eot');
+  src: url('../fonts/Planner.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Planner.woff2') format('woff2'),
+      url('../fonts/Planner.woff') format('woff'),
+      url('../fonts/Planner.ttf') format('truetype'),
+      url('../fonts/Planner.svg#Planner') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Planner';
 }
 
 * {
@@ -11,7 +25,7 @@ body {
 a,
 button {
   color: rgba(46, 46, 46, 1);
-  font-family: monospace;
+  font-family: 'Planner';
 }
 
 h1,
@@ -32,7 +46,7 @@ select,
 label,
 div {
   color: rgba(46, 46, 46, 1);
-  font-family: Arial, Helvetica, sans-serif,Calibri;
+  font-family: 'Planner';
 }
 
 :root {
@@ -49,6 +63,8 @@ div {
   --component-boxshadow-light: 0px 0px 10px rgba(0, 0, 0, 0.1);
   --component-borderradius: 5px;
   --component-button-borderradius: 5rem;
+
+  --font-name : 'Planner';
 }
 
 ::-webkit-scrollbar {

@@ -1,59 +1,60 @@
 .container {
-  background: var(--color-container);
-  padding: 1rem 3rem;
-  box-shadow: var(--component-boxshadow-light);
-  display: flex;
-  position: fixed;
-  width: 100%;
-  align-items: center;
+    background: var(--color-container);
+    padding: 1rem 3rem;
+    box-shadow: var(--component-boxshadow-light);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
 }
 
 .RightButton {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .RightButton > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
 }
 
 .RightButton > ul > li > a {
-  background: var(--color-button);
-  padding: 0.5rem 0.8rem;
-  border-radius: var(--component-borderradius);
-  border: none;
+    background: var(--color-button);
+    padding: 0.5rem 0.8rem;
+    border-radius: var(--component-borderradius);
+    border: none;
+    text-decoration: none;
 }
+
 .RightButton > ul > li > a:hover,
 .RightButton > ul > li > a:active,
 .RightButton > ul > li > a:focus {
-  background: var(--color-button-hover);
-}
-.link {
-  text-decoration: none;
+    background: var(--color-button-hover);
 }
 
 .title {
-  text-decoration: none;
-  color: #464646;
-  font-size: 30px;
+    text-decoration: none;
+    color: #464646;
+    font-size: 30px;
+    border: none;
+    background: none;
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 1rem;
-    box-shadow: var(--component-boxshadow-heavy);
-  }
-  .title{
-    font-size: 20px;
-  }
-  .RightButton > ul > li > a{
-    padding: 0.3rem 0.5rem;
-  }
-
+    .container {
+        padding: 1rem;
+        box-shadow: var(--component-boxshadow-heavy);
+    }
+    .title {
+        font-size: 20px;
+    }
+    .RightButton > ul > li > a {
+        padding: 0.3rem 0.5rem;
+        border-radius: 0.25rem;
+    }
 }

@@ -7,8 +7,10 @@ import {
     MdList,
     MdTrackChanges,
 } from "react-icons/md";
+import useAuth from "@src/hook/auth"
 
 export default function sideNav() {
+    const { logout } = useAuth();
     return (
         <div className={styles.main}>
             <div className={styles.information}>
@@ -35,7 +37,7 @@ export default function sideNav() {
                     <MdAccountCircle size="2rem" />
                     Profile
                 </button>
-                <button>
+                <button onClick={logout}>
                     <MdLogout size="2rem" />
                     SignOut
                 </button>
