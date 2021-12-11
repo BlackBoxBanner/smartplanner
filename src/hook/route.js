@@ -10,7 +10,7 @@ export function withPublic(Component) {
 
       if (auth.user) {
           router.replace("/user/dashboard");
-          return {/* <Loading/> */};
+          return <Loading/>;
       }
       return <Component auth={auth} {...props} />;
   };
@@ -23,7 +23,7 @@ export function withProtected(Component) {
 
       if (!auth.user) {
           router.replace("/auth/login");
-          return {/* <Loading/> */};
+          return <Loading/>;
       }
       return <Component auth={auth} {...props} />;
   };
