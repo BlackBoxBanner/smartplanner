@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styles from "@styles/Dashboard.module.css";
 import DashbordNav from "@component/dashbordNav";
-import SideNav from "@component/sideNav";
-import useAuth from "@src/hook/auth";
+import SideNav from "@component/SideNav";
 import { withProtected } from "@src/hook/route";
 
 function Dashboard() {
