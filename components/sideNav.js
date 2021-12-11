@@ -7,10 +7,10 @@ import {
     MdList,
     MdTrackChanges,
 } from "react-icons/md";
-import UseAuth from "@src/hook/auth"
+import useAuth from "@src/hook/auth"
 
 export default function SideNav() {
-    const { logout } = UseAuth();
+    const { logout } = useAuth();
     return (
         <div className={styles.main}>
             <div className={styles.information}>

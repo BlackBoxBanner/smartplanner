@@ -3,7 +3,7 @@ import {AuthService} from "@src/service/AuthService";
 
 const authContext = createContext();
 
-export default function UseAuth() {
+export default function useAuth() {
     return useContext(authContext);
 }
 

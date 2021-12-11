@@ -1,11 +1,11 @@
 import styles from "@styles/layout/Auth.module.css";
 import { FcGoogle } from "react-icons/fc";
 import Head from "next/head";
-import UseAuth from "@src/hook/auth";
+import useAuth from "@src/hook/auth";
 import { withPublic } from "@src/hook/route";
 
 function Login() {
-    const { loginWithGoogle } = UseAuth();
+    const { loginWithGoogle } = useAuth();
     return (
         <div className={styles.main}>
             <Head>

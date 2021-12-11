@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import React from "react";
-import UseAuth from "@src/hook/auth";
+import useAuth from "@src/hook/auth";
 import Loading from "@component/loading";
 
 export function withPublic(Component) {
   return function WithPublic(props) {
-      const auth = UseAuth();
+      const auth = useAuth();
       const router = useRouter();
 
       if (auth.user) {
@@ -18,7 +18,7 @@ export function withPublic(Component) {
 
 export function withProtected(Component) {
   return function WithProtected(props) {
-      const auth = UseAuth();
+      const auth = useAuth();
       const router = useRouter();
 
       if (!auth.user) {
