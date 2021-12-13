@@ -1,0 +1,25 @@
+.main{
+  display: flex;
+  position: fixed;
+  background: var(--color-profilebar-container);
+  width: fit-content;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  flex-direction: column;
+}
+
+.leftcontent{
+  font-size: 1.5rem;
+}
+
+.buttonList{
+  
+}
+
+@media (max-width: 768px) {
+  .main{
+    width: 100%;
+    min-height: fit-content;
+    padding: 0.5rem;
+  }
+}
