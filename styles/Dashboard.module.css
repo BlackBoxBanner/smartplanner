@@ -1,12 +1,13 @@
 .main {
-    min-height: 100vh;
-    display: flex;
-    background: var(--color-background);
-    padding: 0 0 0 8rem;
+  min-height: 100vh;
+  display: flex;
+  background: var(--color-background);
+  padding: 0 0 0 10rem;
 }
 
-@media (max-width: 450px) {
-    .main {
-        padding: 0;
-    }
+@media (max-width: 768px) {
+  .main {
+    padding: 3rem 1rem 0 1rem;
+  }
 }
+

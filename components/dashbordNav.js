@@ -62,7 +62,7 @@ export default function DashbordNav2() {
         </li> */}
 
         <li>
-          <Link href="/">
+          <Link href="/user/dashboard">
             <button>
               {" "}
               {/* className={styles.btn} */}
@@ -74,7 +74,7 @@ export default function DashbordNav2() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/user/calendar">
             <button>
               <div className={styles.icon}>
                 <MdCalendarToday size="2rem" />
@@ -84,7 +84,7 @@ export default function DashbordNav2() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/user/todolist">
             <button>
               <div className={styles.icon}>
                 <MdList size="2rem" />
@@ -94,7 +94,7 @@ export default function DashbordNav2() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/user/tracker">
             <button>
               <div className={styles.icon}>
                 <MdTrackChanges size="2rem" />
@@ -105,7 +105,7 @@ export default function DashbordNav2() {
         </li>
 
         <li>
-          <Link href="/">
+          <Link href="/user/profile">
             <button>
               <div className={styles.icon}>
                 <MdAccountCircle size="2rem" />
@@ -115,14 +115,12 @@ export default function DashbordNav2() {
           </Link>
         </li>
         <li>
-          <Link href="/">
-            <button onClick={logout}>
-              <div className={styles.icon}>
-                <MdLogout size="2rem" />
-                SignOut
-              </div>
-            </button>
-          </Link>
+          <button onClick={logout}>
+            <div className={styles.icon}>
+              <MdLogout size="2rem" />
+              SignOut
+            </div>
+          </button>
         </li>
       </div>
     </div>
