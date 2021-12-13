@@ -1,23 +1,84 @@
-.main{
+.main {
   display: flex;
   position: fixed;
   background: var(--color-profilebar-container);
   width: fit-content;
   min-height: 100vh;
-  padding: 1.5rem 1rem;
   flex-direction: column;
 }
 
-.leftcontent{
+.leftcontent {
+  display: flex;
+  justify-content: center;
   font-size: 1.5rem;
+  margin: 0 0 5rem 0;
+  padding: 1.5rem 1rem;
 }
 
-.buttonList{
-  
+.rightcontent {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rightcontent li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 0.5rem;
+}
+
+.rightcontent > li > button {
+  background: var(--color-profilebar-container);
+  border: none;
+  color: var(--color-profilebar-text);
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.rightcontent > li > button:hover,
+.rightcontent > li > button:focus,
+.rightcontent > li > button:active {
+  background: var(--color-button-hover);
+}
+
+.btn {
+  background: var(--color-profilebar-container);
+  border: none;
+  color: var(--color-profilebar-text);
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.btn:hover {
+  background: var(--color-button-hover);
+  color: aliceblue;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.Link {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
-  .main{
+  .main {
     width: 100%;
     min-height: fit-content;
     padding: 0.5rem;
