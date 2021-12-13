@@ -5,7 +5,7 @@ export default function Loading() {
     <div className={styles.main}>
       <div>
         <h1 className={styles.logo}>
-          Explanner
+          StudyPlanner
         </h1>
       </div>
       <div className={styles.dot}>

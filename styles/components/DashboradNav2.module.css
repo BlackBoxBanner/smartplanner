@@ -77,10 +77,52 @@
   text-decoration: none;
 }
 
+.hamb{
+  display: none;
+  justify-content: center;
+}
+
+.NavHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger{
+  border: none;
+  background: none;
+}
+
+.menuIcon{
+  display: flex;
+}
+.closeIcon{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .main {
     width: 100%;
     min-height: fit-content;
-    padding: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .leftcontent {
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0.25rem;
+  }
+
+  .hamb{
+    display: flex;
+  }
+  .rightcontent{
+    display: none;
+  }
+
+  .icon {
+    justify-content: center;
   }
 }
