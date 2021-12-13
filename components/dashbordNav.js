@@ -10,9 +10,21 @@ import {
 } from "react-icons/md";
 import { GrClose, GrMenu } from "react-icons/gr";
 import useAuth from "@src/hook/auth";
+import { useState } from "react";
 
 export default function DashbordNav2() {
   const { logout } = useAuth();
+  const [isOpen, setIsOpen] = useState(false);
+  const menu = document.getElementById("rightcontent");
+  const menuIcon = document.getElementById("menuIcon");
+  const closeIcon = document.getElementById("closeIcon");
+  const test = document.getElementById("test");
+
+  if (isOpen) {
+    menu.style.display = "flex";
+    menuIcon.style.display = "none";
+    closeIcon.style.display = "block";
+  }
 
   return (
     <div className={styles.main}>
@@ -21,11 +33,14 @@ export default function DashbordNav2() {
 
         {/* hanburger menu */}
         <div className={styles.hamb}>
-          <button className={styles.hamburger}>
-            <div className={styles.menuIcon}>
+          <button
+            className={styles.hamburger}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div id="menuIcon" className={styles.menuIcon}>
               <GrMenu size="1.5rem" />
             </div>
-            <div className={styles.closeIcon}>
+            <div id="closeIcon" className={styles.closeIcon}>
               <GrClose size="1.5rem" />
             </div>
           </button>
@@ -33,7 +48,7 @@ export default function DashbordNav2() {
         {/* hanburger menu */}
       </div>
 
-      <div className={styles.rightcontent}>
+      <div id="rightcontent" className={styles.rightcontent}>
         {/* <li>
           <Link href="/">
             <button>

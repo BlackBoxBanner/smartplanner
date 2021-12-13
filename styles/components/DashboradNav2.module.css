@@ -102,6 +102,10 @@
   align-items: center;
 }
 
+#rightcontent{
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .main {
     width: 100%;
