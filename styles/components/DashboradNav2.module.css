@@ -5,6 +5,7 @@
   width: fit-content;
   min-height: 100vh;
   flex-direction: column;
+  z-index: 1;
 }
 
 .leftcontent {

@@ -1,6 +1,18 @@
-.main{
-    min-height: 100vh;
-    min-width: 100vw;
-    background: var(--color-background);
+.main {
+  min-height: 100vh;
+  background: var(--color-background);
+  padding: 5rem 0 0 0;
 }
 
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Image{
+  padding: 3rem;
+  width: 7;
+  height: 100%;
+}

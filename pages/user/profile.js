@@ -6,8 +6,6 @@ import useAuth from "@src/hook/auth";
 import Image from "next/image";
 
 function Profile() {
-  const { user } = useAuth();
-  const userURL = user.photoURL;
   return (
     <div>
       <Head>
@@ -16,20 +14,8 @@ function Profile() {
       <DashbordNav2 />
       <main className={styles.main}>
         <div className={styles.inContent}>
-          <div className={styles.userInfo}>
-            <img
-              className={styles.img1}
-              src={userURL}
-              width="200px"
-              height="200px"
-            />
-            Name : {user.displayName}
-            <br />
-            Email : {user.email}
-            <br />
-            User ID : {user.uid}
-            <button className={styles.ProfileEditBTN}>Edit Profile</button>
-          </div>
+          <LeftContext />
+          <RightContext />
         </div>
       </main>
     </div>
@@ -37,3 +23,33 @@ function Profile() {
 }
 
 export default withProtected(Profile);
+
+function LeftContext() {
+  const { user } = useAuth();
+  const userURL = user.photoURL;
+  return (
+    <div className={styles.userInfo}>
+      <img className={styles.img1} src={userURL} width="200px" height="200px" />
+      <p>Name : {user.displayName}</p>
+      <p>Email : {user.email}</p>
+      <p>User ID : {user.uid}</p>
+    </div>
+  );
+}
+
+function RightContext() {
+  return (
+    <div className={styles.RightCotext}>
+      <div className={styles.InInfoBtn}>
+        <div>
+          <button className={styles.BTN}>Edit Profile</button>
+          <button className={styles.BTN}>Change Password</button>
+          <button className={styles.BTN}>My education background</button>
+        </div>
+        <div>
+          <button className={styles.ResetAccount}>Reset my account</button>
+        </div>
+      </div>
+    </div>
+  );
+}

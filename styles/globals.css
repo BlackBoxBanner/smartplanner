@@ -69,7 +69,7 @@ div {
 
 ::-webkit-scrollbar {
   width: 0.4rem;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-input-border);
