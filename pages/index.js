@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Smart Study Planner</title>
       </Head>
       <Navbar />
       <main className={styles.main}>

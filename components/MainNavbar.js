@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className={styles.container}>
             <div>
                 <Link href="/">
-                    <div className={styles.title}>Explanner</div>
+                    <div className={styles.title}>Smart Study Planner</div>
                 </Link>
             </div>
             <div className={styles.RightButton}>
