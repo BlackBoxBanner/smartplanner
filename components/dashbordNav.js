@@ -31,7 +31,7 @@ export default function DashbordNav2() {
   return (
     <div className={styles.main}>
       <div className={styles.NavHead}>
-        <div className={styles.leftcontent}>Smart Study Planner</div>
+        <div className={styles.leftcontent}>Smart<br/>Study<br/>Planner</div>
 
         {/* hanburger menu */}
         <div className={styles.hamb}>
