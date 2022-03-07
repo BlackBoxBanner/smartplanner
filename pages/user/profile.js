@@ -3,7 +3,6 @@ import styles from "@styles/user/Profile.module.css";
 import { withProtected } from "@src/hook/route";
 import DashbordNav2 from "@component/dashbordNav";
 import useAuth from "@src/hook/auth";
-import Image from "next/image";
 
 function Profile() {
   return (

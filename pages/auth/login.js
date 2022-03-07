@@ -5,70 +5,64 @@ import useAuth from "@src/hook/auth";
 import { withPublic } from "@src/hook/route";
 
 function Login() {
-    const { loginWithGoogle } = useAuth();
-    return (
-        <div className={styles.main}>
-            <Head>
-                <title>Login</title>
-            </Head>
-            <div className={styles.container}>
-                <div className={styles.titlearea}>
-                    <h1 className={styles.title}>Login</h1>
-                </div>
-                <div className={styles.information}>
-                    <div className={styles.login}>
-                        {/* login with google */}
-                        <div>
-                            <button onClick={loginWithGoogle} className={styles.loginwithgoogle}>
-                                <FcGoogle size="1.5em" />
-                                {`Login with Google`}
-                            </button>
-                        </div>
-                        <div className={styles.centeronly}>or</div>
-                        {/* input your email and password */}
-                        <div>
-                            <input
-                                type="email"
-                                className={styles.input}
-                                placeholder="Email"
-                                required
-                            />
-                        </div>
-                        <div className={styles.gap}>
-                            <input
-                                type="password"
-                                className={styles.input}
-                                placeholder="Password"
-                                required
-                            />
-                        </div>
-                        {/* //TODO: styles the checkbox */}
-                        <div className={styles.rememberpassword}>
-                            <label
-                                className={
-                                    styles.lablecenter + " " + styles.checkbox
-                                }
-                            >
-                                <input
-                                    type="checkbox"
-                                    className={styles.checkbox}
-                                />
-                                {`Remember password`}
-                            </label>
-                        </div>
-                        {/* sign in button */}
-                        <div className={styles.signin}>
-                            <button className={styles.signinBtn}>Sign in</button>
-                        </div>
-                        
-                    </div>
-                    <div className={styles.rightinformation}>
-                        <h1>
-                            This is a demo website. You can use this website to
-                            test the
-                        </h1>
-                        <p className={styles.textjustify}>
-                            {`When I was a little boy in elementary school, the neighborhood kids
+  const { loginWithGoogle } = useAuth();
+  return (
+    <div className={styles.main}>
+      <Head>
+        <title>Login</title>
+      </Head>
+      <div className={styles.container}>
+        <div className={styles.titlearea}>
+          <h1 className={styles.title}>Login</h1>
+        </div>
+        <div className={styles.information}>
+          <div className={styles.login}>
+            {/* login with google */}
+            <div>
+              <button
+                onClick={loginWithGoogle}
+                className={styles.loginwithgoogle}
+              >
+                <FcGoogle size="1.5em" />
+                {`Login with Google`}
+              </button>
+            </div>
+            <div className={styles.centeronly}>or</div>
+            {/* input your email and password */}
+            <div>
+              <input
+                type="email"
+                className={styles.input}
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div className={styles.gap}>
+              <input
+                type="password"
+                className={styles.input}
+                placeholder="Password"
+                required
+              />
+            </div>
+            {/* //TODO: styles the checkbox */}
+            <div className={styles.rememberpassword}>
+              <label className={styles.lablecenter + " " + styles.checkbox}>
+                <input type="checkbox" className={styles.checkbox} />
+                {`Remember password`}
+              </label>
+            </div>
+            {/* sign in button */}
+            <div className={styles.signin}>
+              <button className={styles.signinBtn}>Sign in</button>
+            </div>
+          </div>
+          <div className={styles.rightinformation}>
+            <h1>
+              This is a demo website. You can use this website to test the
+            </h1>
+            <p className={styles.textjustify}>
+              {`When I was a little boy in elementary school, the neighborhood kids
                             and I all looked forward to playing so many games in my backyard
                             during the long summer holidays between grades. For instance, one of
                             our favorite games was whiffle ball, a kid's version of baseball.
@@ -87,12 +81,12 @@ function Login() {
                             popular TV show about a rock-and-roll band, on my little record
                             player. Even now, fifty years later, I still look back on all those
                             fun summertime games out in my backyard with a lot of fondness.`}
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </p>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default withPublic(Login);
